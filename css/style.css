@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&family=Montserrat:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+
+/*
+
+fuentes
+
+font-family: 'Aleo', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Barlow Condensed', sans-serif;
+
+colores
+
+*/
+
+.banner1 {
+    background-image: url(../assets/persona-paisaje1.jpg);
+    width: 100%;
+    height: 100rem;
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem 10% 1rem 10%;
+    background: linear-gradient(180deg, rgba(0,0,0), rgba(0,0,0,0));
+}
+
+.logoBN img{
+    height: 10rem;
+    width: 10rem;
+}
+
+nav {
+    display: flex;
+    gap:2rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.linkNav {
+    text-decoration: none;
+    color: rgb(228, 227, 227);
+    font-size: 3rem;
+    font-family:'Barlow Condensed', sans-serif;
+}
+
+.linkNav:hover {
+    text-shadow: 0.4rem 0.4rem 0.2rem black;
+}
+
+.banner1Contenido {
+    width: 100%;
+    height: 100%;
+}
+
+.banner1Contenido h1 {
+    font-size: 10rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif ;
+    padding-top: 6%;
+    letter-spacing: 40px;
+    line-height: 170px;
+    color: rgba(0, 0, 0, 0.812);
+}
+
+.banner2 {
+    background-image: url(../assets/gente-fuego.jpg);
+    width: 100%;
+    height: 60rem;
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.banner2 p {
+    font-family: 'Aleo', serif;
+    font-size: 5rem;
+    text-align: center;
+    color: rgb(148, 147, 147);
+    line-height: 5rem;
+    letter-spacing: 0.7rem;
+    padding-top: 6%;
+    
+}
+
+aside {
+    position:relative;
+}
+
+.socialMedia {
+    position:absolute;
+    right: 0px;
+    top: -1200px;
+    background-color: rgba(122, 119, 119, 0.5);
+    border-radius: 10px 0px 0px 10px ;
+}
+
+.socialMedia img {
+    display: block;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.footerLogo img {
+    width: 12rem;
+    height: 12rem;
+    background-color: black;
+    display: block;
+    margin: auto;
+}
+footer p {
+    text-align: center;
+    font-family:'Aleo', serif;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    position: relative;
+    color:  rgb(93, 93, 93);;
+}
+
+footer {
+    padding-top: 30px;
+    background-color: black;
+    padding-bottom: 30px;
+}
+
+
+footer p::after{  /* lineas del logo, seguro hay una mejor manera de hacerlo*/
+    content: '';
+    position: absolute;
+    right: 30%;
+    top: -65px;
+    width: 150px;
+    height: 2px;
+    background-color: rgb(93, 93, 93);
+}
+
+footer p::before {
+    content: '';
+    position: absolute;
+    left: 30%;
+    top: -65px;
+    width: 150px;
+    height: 2px;
+    background-color:  rgb(93, 93, 93);
+}
+
+.footerLinks ul {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.3rem;
+    padding-top: 10px;
+}
+
+.linkFooter {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: rgb(93, 93, 93);
+    padding: 10px;
+}
+
+.linkFooter:hover {
+    color: white;
+}
+
+/*--------------------TESTIMONIOS-----------------------*/
+
+.backgroundTestimonios {
+    background-image: url(../assets/persona-paisaje3.jpg);
+    width: 100%;
+    height: 200rem;
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.testimonios {
+    margin: 5%;
+    padding-top: 20rem;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.testimonios p {
+    font-family:'Aleo', serif;
+    background-color: rgba(166, 166, 166, 0.384);
+    font-size: 2.5rem;
+    width: 95%;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 3%;
+    text-align: center;
+    border-radius: 3rem;
+}
+
+.testimonios img {
+    height: 300px;
+    width: 300px;
+    border-radius: 3rem;
+}
+
+.testimonio1{
+    display: flex;
+    padding-bottom: 7rem;
+}
+
+.testimonio2{
+    display: flex;
+    padding-bottom: 7rem;
+}
+
+.testimonio3{
+    display: flex;
+    padding-bottom: 7rem;
+}
+
+.testimonio4{
+    display: flex;
+    padding-bottom: 7rem;
+}
+
+/*----------------------Sobre nosotros------------------------*/
+
+.backgroundSobreNosotros {
+    background-image: url(../assets/sobre-nosotros1.jpg);
+    width: 100%;
+    height: 100rem;
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.backgroundSobreNosotros .linkNav:hover {
+    text-shadow: 0.4rem 0.4rem 0.2rem rgb(215, 215, 215);
+}
+
+.firstSectionText{
+    font-family: 'Aleo', serif;
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(148, 147, 147);
+    line-height: 3.5rem;
+    letter-spacing: 0.3rem;
+    padding: 2%;
+    margin:10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgba(255, 255, 255, 0.063);
+    border-radius: 2rem;
+}
+
+.backgroundSobreNosotros2 {
+    background-image: url(../assets/sobre-nosotros2.jpg);
+    width: 100%;
+    height: 100rem;
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.secondSection {
+    display:flex;
+    padding: 5%;
+    padding-left: 20%;
+    position: relative;
+}
+
+.secondSection img {
+    height: 100%;
+    width: 25rem;
+    border-radius: 0.3rem;
+    position:absolute;
+    bottom: 40%;
+    left: 10%;
+}
+
+
+.secondSection p {
+    font-family: 'Aleo', serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(148, 147, 147);
+    line-height: 2.5rem;
+    letter-spacing: 0.3rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+    margin-left: 25%;
+    margin-right: 15%;
+    background-color: rgba(255, 255, 255, 0.063);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.staff {
+    display: flex;
+    padding: 5%;
+    justify-content: center;
+}
+
+.staffTitulo h2 { 
+    font-family:'Montserrat', sans-serif ;
+    font-size: 7rem;
+    text-align: center;
+    color: rgb(162, 161, 161);
+}
+
+.staff img {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    padding: 10%;
+}
+
+.staff p {
+    text-align: center;
+    font-family: 'Aleo', serif;
+    font-size: 2rem;
+    padding: 3%;
+}
+
+.staff a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-family: 'Aleo', serif;
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.432);
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 5rem;
+}
+
+/*----------------------EXPERIENCIAS--------------------------*/
+
+.backgroundExperiencias {
+    background-image: url(../assets/persona-paisaje2.jpg);
+    width: 100%;
+    height: 200rem;
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+
+.travesiash2 {
+    font-family:'Aleo', serif;
+    font-size: 3rem;
+    color: rgb(93, 93, 93);
+    margin-left: 20%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.travesias {
+    display: flex;
+    margin-left: 10%;
+    margin-bottom: 10%;
+
+}
+
+.travesias img {
+    height: 30rem;
+    width: 30rem;
+    border-radius: 3rem;
+    margin-left: 6rem;
+    margin-bottom: 2%;
+}
+
+.travesiaspie {
+    height: 8rem;
+    width: 20rem;
+    margin-top: 4%;
+    background-color: rgba(0, 0, 0, 0.125);
+    margin-left: 30%;
+    border-radius: 3%;
+}
+
+.travesiaspie p {
+    text-align: center;
+    font-family: 'aleo';
+    font-size: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+.travesias a {
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.662);
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+    padding-top: 0.5rem;
+    margin-left: 30%;
+    border-radius: 30rem;
+}
+
+.descanzosh2 {
+    font-family:'Aleo', serif;
+    font-size: 3rem;
+    color: rgb(93, 93, 93);
+    margin-left: 20%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.descanzos img {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 3rem;
+}
+
+.descanzos {
+    margin: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.descanzo1 {
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.descanzos p {
+    font-family:'Aleo', serif;
+    background-color: rgba(166, 166, 166, 0.384);
+    font-size: 2rem;
+    width: 95%;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 3%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    border-radius: 3rem;
+    margin-top: 2%;
+}
+
+.descanzo2 {
+    display: flex;
+    margin-bottom: 5%;
+}
+
+
+/*-----------CONTACTO------------*/
+
+.backgroundContacto {
+    background-image: url(../assets/persona-paisaje1.jpg);
+    width: 100%;
+    height: 65rem;
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    overflow:auto;
+}
+
+
+.mainContacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contacto {
+    background-color: rgba(255, 255, 255, 0.278);
+    height: 40rem;
+    width: 35%;
+    margin: 5rem 3rem 5% 5rem;
+    min-width: 25rem;
+    max-width: 40rem;
+}
+
+.contacto h2 {
+    text-align: center;
+    margin: 1rem;
+    font-family: 'Aleo';
+    font-size: 2rem;
+    margin: 2rem 0 4rem 0;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contacto input, textarea {
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 3rem;
+    min-width: 15rem;
+    max-width: 35rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    color: grey;
+    
+}
+
+.contacto textarea {
+    resize: none;
+    height: 12rem;
+    
+}
+
+.ubicacion { 
+    background-color: rgba(255, 255, 255, 0.278);
+    height: 40rem;
+    width: 35%;
+    margin: 5rem 3rem 5% 5rem;
+    min-width: 25rem;
+    max-width: 40rem;
+}
+
+.ubicacion h2 {
+    text-align: center;
+    margin: 1rem;
+    font-family: 'Aleo';
+    font-size: 2rem;
+    margin: 2rem 0 4rem 0;
+}
+
+.mapa img {
+    display: flex;
+    margin: auto;
+    height: 20rem;
+    width: 20rem;
+    border: 0.1rem solid black;
+    box-shadow: 2px 3px 4px black;
+
+}
+
+.horarios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 3rem;
+    line-height: 1.2rem;
+    height: 5rem;
+    margin-top: 1rem ;
+}
+
+.horarios img {
+    width: 3rem;
+}
+
+.telefono {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2rem;
+    line-height: 1.2rem;
+    height: 5rem;
+    margin-left: 3.3rem;
+}
+
+.telefono img {
+    width: 3rem;
+}
